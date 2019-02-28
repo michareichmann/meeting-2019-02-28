@@ -1,0 +1,36 @@
+%% TITLE PAGE
+\defbeamertemplate*{title page}{customized}[1][] {
+
+  \vspace*{-20pt}
+	\begin{tikzpicture}[remember picture,overlay]
+		\node[at=(current page.center), opacity=0.3] {
+			\includegraphics[width=1.13\paperwidth]{bkg}};
+	\end{tikzpicture}
+	
+	\begin{minipage}[.2\textheight]{.4\textwidth}
+    \begin{figure}[t]\flushleft
+      \includegraphics[height=1cm]{ETHLogo}
+    \end{figure}
+	\end{minipage}\hfill
+	\begin{minipage}[.2\textheight]{.4\textwidth}
+    \begin{figure}[t]\flushright
+      \includegraphics[height=.9cm]{Logo_IPA_pos}
+    \end{figure}
+	\end{minipage}\vspace*{20pt}
+	
+	\begin{minipage}[.4\textheight]{\textwidth}
+    \fig{.4}{\inserttitlegraphic}
+	\end{minipage}
+	
+	\begin{block}{}
+		\centering
+		\vspace*{1pt}
+		\usebeamerfont{title}\usebeamercolor[fg]{title}\textbf{\inserttitle}\\\vspace*{5pt}
+		\usebeamerfont{subtitle}\insertsubtitle\\\vspace*{1pt}
+	\end{block}
+	\vspace*{10pt}
+	\centering
+	\color{black}
+	\usebeamerfont{author}\textbf{\insertauthor}\par\vspace*{5pt}
+	\usebeamerfont{date}\insertdate\par
+}

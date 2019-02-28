@@ -1,0 +1,22 @@
+\usetheme{Boadilla}
+\graphicspath{ {figures/} }
+\makeatletter
+\def\input@path{ {sections/} {settings/} }
+\makeatother
+\usecolortheme[named=darkgray]{structure}
+\useoutertheme{shadow}
+\beamertemplatenavigationsymbolsempty
+\makeindex
+
+\author[M. Reichmann]{Michael Reichmann}
+\institute[\textbf{\textit{ETH}}\scalebox{.6}{\textit{Z\"{u}rich}}]{Swiss Federal Institute of Technology Zurich}
+
+\AtBeginSection{{\setbeamertemplate{headline}{}\frame[noframenumbering]{\sectionpage}}}
+
+\sisetup{detect-weight=true, detect-family=true, range-units=single, range-phrase=$\ \sim\ $, separate-uncertainty=true, exponent-product=\ensuremath{\cdot}}
+
+\hypersetup{colorlinks=true, linkcolor=darkgray, urlcolor=blue}
+
+\setbeamercolor{frametitle}{bg=darkgray!30!white, fg=darkgray}
+\setbeamercolor{date in head/foot}{bg=lightgray}
+\setbeamercolor{title in head/foot}{bg=darkgray, fg=lightgray}

@@ -1,0 +1,146 @@
+\section{Timeline}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 0 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Setup}
+\begin{frame}{Final Setup}
+
+	\fig{.55}{TelPad}[Modular Beam Telescope]\vspace{-10pt}
+
+	\begin{itemize}\itemfill
+		\item 4 tracking planes \ra trigger (fast-OR) with adjustable effective area
+		\item diamond pad detectors in between tracking planes
+		\item fast scintillator 
+	\end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Setup Development}
+
+	\only<1>{\fig{.5}{TelSchematics0}[Setup May15]}
+	\only<2>{\fig{.5}{TelSchematics1}[Setup Aug15 - Oct15]}
+	\only<3>{\fig{.5}{TelSchematics2}[Setup Aug16 - Oct18]}
+	
+	\begin{itemize}\itemfill
+		\only<1>{\item May15}
+		\only<2>{\item May15 \ra \good{adding scintillator} \ra Aug15, Oct15}
+		\only<3>{\item May15 \ra adding scintillator \ra Aug15, Oct15 \ra \good{using OSU-TU} \ra May17 $\hdots$}
+		\item<2-> gaining precise trigger timing of \orderof{\SI{1}{\nano\second}}
+		\item<3-> strongly simplifying setup, slightly worsening trigger timing (\SI{400}{\mega\hertz} clock)
+	\end{itemize}
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Procedure Development}
+
+	\begin{minipage}[c][3cm]{\textwidth}
+		\begin{itemize}\itemfill
+			\item until October 2015: closing beam shutter before every run
+				\begin{itemize}
+					\item found out it makes no difference and always left it open afterwards
+				\end{itemize}\vspace*{1pt}
+			\item until October 2016: pumping every diamond pad detector with a Sr-source
+			\begin{itemize}
+				\item found out that pumping with the beam is much faster and reliable
+			\end{itemize}
+		\end{itemize}
+	\end{minipage}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Detectors}
+\begin{frame}{Tested Detectors}
+
+	\nicetab{ccccccc}{
+		\textbf{Name} & \textbf{Nick} & \textbf{Producer} & \textbf{Type} & \textbf{T [\SI{}{\micro\meter}]} 	& \textbf{Irr$_{\z{max}}$} & \textbf{Comments}			\\\hline
+		S129		& S129		& e6		& scCVD			& 528	& 0						& reference 					\\
+		IIa-3		& IIa-3		& IIa		& scCVD			& ?		& \SI{5e13}{}	&											\\\hline
+		SiD1		& SiD1		& PSI		& Si-Diode	& 300	& 0						& calibration					\\
+		SiD2		& SiD2		& IJS		& Si-Diode	& 100	& 0						& calibration					\\\hline
+		2A87-e	& 2A87-e	& II-VI	& pCVD			& ?		& \SI{5e13}{}	&											\\
+		II6-78	& poly-A	& II-VI	& pCVD			& ?		& 0						& 										\\
+		II6-79	& poly-B	& II-VI	& pCVD			& ?		& 0						& fixed surface 			\\
+		II6-81	&	poly-D	& II-VI	& pCVD			& ?		& \SI{1e14}{}	&											\\
+		II6-94	&	94			& II-VI	& pCVD			& ?		& 0						& also as pixel				\\
+		II6-95	& 95			& II-VI	& pCVD			& ?		& \SI{5e14}{}	&	also as pixel				\\
+		II6-96	& 96			& II-VI	& pCVD			& ?		& 0						& 										\\
+		II6-97	& 97			& II-VI	& pCVD			& ?		& \SI{3.5e15}{}& irradiation studies\\
+		II6-B2	& B2			& II-VI	& pCVD			& 455	& \SI{8e15}{}	&	irradiation studies	\\
+		II6-E5	&	E5			& II-VI	& pCVD			& ?		& 0						& bcm prime	test			\\
+		II6-H0	&	H0			& II-VI	& pCVD			& ?		& 0						& bcm prime	test			\\
+		II6-H8	& H8			& II-VI	& pCVD			& ?		& 0						& bcm prime	test			\\
+		}[Pad Detector Information.]
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2015 - 2016}
+\begin{frame}{2015 - 2016}
+
+	\nicetab{clllll}{
+		\textbf{Diamond} & \textbf{May15} & \textbf{Aug15} & \textbf{Oct15} & \textbf{Aug16} 		& \textbf{Oct16}			\\\hline
+		S129		& \cmark (0) 					& \cmark (0) 	& \cmark (0) 					& \cmark (0) 					& \cmark (0) 					\\
+		IIa-3		& \xmark		 					& \xmark		 	& \cmark (\SI{5e13}) 	& \xmark 		 					& \xmark 		 					\\\hline
+		SiD1		& \xmark		 					& \xmark		 	& \xmark 							& \cmark (0) 					& \cmark (0) 					\\
+		SiD2		& \xmark		 					& \xmark		 	& \xmark						 	& \xmark 		 					& \cmark (0) 					\\\hline
+		2A87-e	& \xmark		 					& \xmark  		& \cmark (\SI{5e13})	& \xmark 							& \xmark  						\\
+		II6-78	& \cmark (0) 					& \xmark  		& \xmark  						& \xmark 							& \xmark  						\\
+		II6-79	& \cmark (0) 					& \cmark (0)	& \xmark  						& \xmark 							& \xmark  						\\
+		II6-81	& \cmark (\SI{1e14}) 	& \xmark  		& \cmark (\SI{1e14})	& \xmark 							& \xmark  						\\
+		II6-94	& \cmark (0) 					& \xmark  		& \xmark  						& \cmark (0)		 			& \xmark  						\\
+		II6-95	& \cmark (0) 					& \xmark  		& \xmark  						& \cmark (\SI{5e14})	& \xmark  						\\
+		II6-96	& \cmark (0) 					& \xmark  		& \xmark  						& \xmark 							& \xmark  						\\
+		II6-97	& \xmark  						& \cmark (0)	&	\cmark (0)					& \cmark (\SI{5e14})	& \cmark (\SI{1.5e15})\\
+		II6-B2	& \xmark  						& \cmark (0)	&	\cmark (\SI{5e14})	& \cmark (\SI{1e15})	& \cmark (\SI{2e15})	\\
+		II6-E5	& \xmark  		 				& \xmark  		& \xmark  						& \xmark 							& \xmark  						\\
+		II6-H0	& \xmark  		 				& \xmark  		& \xmark  						& \xmark 							& \xmark  						\\
+		II6-H8	& \xmark  		 				& \xmark  		& \xmark  						& \xmark 							& \xmark  						\\
+		}[Pad Detector Timeline. Irradiation in \SI{}{\ncm} in parenthesis.]
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{2017 - 2018}
+\begin{frame}{2017 - 2018}
+
+	\nicetab{clllll}{
+		\textbf{Diamond} & \textbf{May17} & \textbf{Jul17} & \textbf{Aug17} & \textbf{Aug18} 		& \textbf{Oct18}				\\\hline
+		S129		& \cmark (0)	& \cmark (0) 						& \cmark (0) 					& \cmark (0) 					& \xmark 		 					\\
+		IIa-3		& \xmark		 	& \xmark		 						& \xmark  					 	& \xmark 		 					& \xmark 		 					\\\hline
+		SiD1		& \xmark		 	& \xmark		 						& \xmark 							& \xmark							& \xmark 		 					\\
+		SiD2		& \cmark (0)	& \cmark (0) 						& \cmark (0)					& \cmark (0) 					& \xmark 		 					\\\hline
+		2A87-e	& \xmark		 	& \xmark  							& \xmark  						& \xmark 							& \xmark  						\\
+		II6-78	&	\xmark			& \xmark  							& \xmark  						& \xmark 							& \xmark  						\\
+		II6-79	& \xmark 			& \cmark (0)						& \xmark  						& \xmark 							& \xmark  						\\
+		II6-81	& \xmark 			& \xmark  							& \xmark  						& \xmark 							& \xmark  						\\
+		II6-94	& \xmark			& \xmark  							& \xmark  						& \xmark 				 			& \xmark  						\\
+		II6-95	& \xmark 			& \xmark  							& \xmark  						& \xmark 							& \xmark  						\\
+		II6-96	& \xmark 			& \xmark  							& \xmark  						& \xmark 							& \xmark  						\\
+		II6-97	& \xmark  		& \cmark (\SI{1.5e15})	&	\cmark (\SI{3.5e15})& \xmark 							&	\xmark 							\\
+		II6-B2	& \xmark  		& \cmark (\SI{2e15})		&	\cmark (\SI{4e15})	& \cmark (\SI{8e15})	& \xmark							\\
+		II6-E5	& \xmark  		& \cmark $^{*}$(0)			& \xmark  						& \xmark 							& \xmark  						\\
+		II6-H0	& \cmark $^{*}$(0)	& \cmark $^{*}$(0)& \xmark  						& \xmark 							& \xmark  						\\
+		II6-H8	& \xmark  		& \xmark  							& \xmark  						& \cmark (0)					& \cmark $^{*}$(0)		\\
+		}[Pad Detector Timeline. Irradiation in \SI{}{\ncm} in parenthesis. $^{*}$ - BCMPrime devices.]
+	
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRAME 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Scan Types}
+\begin{frame}{Scan Types}
+
+	\nicetab{cccc}{
+		\textbf{Diamond} & \textbf{Rate Scan} & \textbf{Voltage Scan} & \textbf{Random Scan} 			\\\hline
+		S129		& \cmark	& \cmark	& \xmark	\\
+		IIa-3		& \cmark	& \xmark	& \xmark	\\
+		SiD1		& \cmark	& \cmark	& \xmark	\\
+		SiD2		& \cmark	& \cmark	& \xmark	\\
+		2A87-e	& \cmark	& \xmark	& \xmark	\\
+		II6-78	& \cmark	& \xmark	& \xmark	\\
+		II6-79	& \cmark	& \xmark	& \xmark	\\
+		II6-81	& \cmark	& \cmark	& \xmark	\\
+		II6-94	&	\cmark	& \cmark	& \cmark	\\
+		II6-95	& \cmark	& \cmark	& \cmark	\\
+		II6-96	& \cmark	& \xmark	& \xmark	\\
+		II6-97	& \cmark	& \xmark	& \cmark	\\
+		II6-B2	& \cmark	& \cmark	& \cmark	\\
+		II6-E5	& \cmark	& \xmark	& \xmark	\\
+		II6-H0	& \cmark	& \xmark	& \xmark	\\
+		II6-H8	& \cmark	& \xmark	& \xmark	\\
+		}[Pad Detector Scan Types.]
+	
+\end{frame}
